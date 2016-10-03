@@ -12,12 +12,23 @@
 
     <!-- Formula -->
       <script>
-         var randomNumberA = (Math.floor(Math.random() * 11));  
-         var randomNumberB = (Math.floor(Math.random() * 11));  
-  
-        var additionFormula = randomNumberA + randomNumberB;
         
         document.getElementById('answerOne').innerHTML = "Hi FUCK you BITCH";
+        while (Attempts != additionFormula)
+        {
+          var i = 0;
+          var randomNumberA = (Math.floor(Math.random() * 11));  
+         var randomNumberB = (Math.floor(Math.random() * 11));  
+         var additionFormula = randomNumberA + randomNumberB;
+        
+          var Attempts = prompt("Give the number");
+          if (Attempts == additionFormula)
+          {
+            document.write("Good job!");
+          }
+          if i = 10;
+         break;
+        }
       </script>
     
   </head>
