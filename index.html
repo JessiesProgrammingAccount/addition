@@ -12,7 +12,7 @@
 
     <!-- Formula -->
       <script>
-        
+        /*
         //document.getElementById('answerOne').innerHTML = "Hi FUCK you BITCH";
         while (Attempts != additionFormula)
         {
@@ -28,6 +28,26 @@
           }
           
          break;
+        }
+        */
+        var UserNumber = 10;
+        var counter = 0;
+        var MaxTries = 5;
+        var RandomNumber = Math.floor(Math.random() * UserNumber) + 1;
+        while (Attempts != RandomNumber)
+        {
+         var Attempts = prompt ("give a number");
+          counter += 1;
+          if (counter > MaxTries)
+          {
+            document.write("No more tries");
+            break;
+          }
+          if (Attempts == RandomNumbers)
+          {
+            document.write("Good job");
+          }
+          
         }
       </script>
     
