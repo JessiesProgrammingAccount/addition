@@ -12,31 +12,38 @@
 
     <!-- Formula -->
       <script>
-        /*
-        //document.getElementById('answerOne').innerHTML = "Hi FUCK you BITCH";
-        while (Attempts != additionFormula)
-        {
+        
+        var UserNumber = 10;
+        var counter = 0;
+        var MaxTries = 5;
        
-          var randomNumberA = (Math.floor(Math.random() * 11));  
-         var randomNumberB = (Math.floor(Math.random() * 11));  
-         var additionFormula = randomNumberA + randomNumberB;
+
+       while (Attempts != additionFormula)
+        {
+         var RandomNumberA = Math.floor(Math.random() * UserNumber) + 1;
+         var RandomNumberB = Math.floor(Math.random() * UserNumber) + 1;
+         var result = randomNumberA + randomNumberB;
         
           var Attempts = prompt("Give the number");
-          if (Attempts == additionFormula)
+          couter += 1;
+          if (Attempts == result)
           {
             document.write("Good job!");
           }
-          
-         break;
+          if (counter > MaxTries)
+          {
+          document.write("No more tries");
+          }
         }
-        */
+        /*
         var UserNumber = 10;
         var counter = 0;
         var MaxTries = 5;
         var RandomNumber = Math.floor(Math.random() * UserNumber) + 1;
+
         while (Attempts != RandomNumber)
         {
-         var Attempts = prompt ("give a number");
+          var Attempts = prompt ("give a number");
           counter += 1;
           if (counter > MaxTries)
           {
@@ -48,7 +55,7 @@
             document.write("Good job");
           }
           
-        }
+        }*/
       </script>
     
   </head>
