@@ -16,23 +16,31 @@
         var UserNumber = 10;
         var counter = 0;
         var MaxTries = 5;
-       
+       function computeResult()
+        {
+          var RandomNumberA = Math.floor(Math.random() * UserNumber) + 1;
+         var RandomNumberB = Math.floor(Math.random() * UserNumber) + 1;
+         var result = randomNumberA + randomNumberB;
+          document.getElementById('result').innerHTML = "RandomNumberA = " + RandomNumberA;
+          
+          
+        }
 
        while (Attempts != additionFormula)
         {
-         var RandomNumberA = Math.floor(Math.random() * UserNumber) + 1;
-         var RandomNumberB = Math.floor(Math.random() * UserNumber) + 1;
-         var result = randomNumberA + randomNumberB;
+//          var RandomNumberA = Math.floor(Math.random() * UserNumber) + 1;
+//          var RandomNumberB = Math.floor(Math.random() * UserNumber) + 1;
+//          var result = randomNumberA + randomNumberB;
         
           var Attempts = prompt("Give lalala the number of " RandomNumberA " + " RandomNumberB);
           counter += 1;
           if (Attempts == result)
           {
-            document.write("Good job!");
+            document.write("Good job jajjajajjaja!");
           }
           if (counter > MaxTries)
           {
-          document.write("No more tries");
+          document.write("No more tries you bababab");
             break;
           }
         }
@@ -70,7 +78,7 @@
       <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
         <div>
-        <label for="probOne">3 + 2 = </label>
+        <label for="probOne">RandomNumberA + RandomNumberB = </label>
         <input type="probOne" id="probOne" name="user_probOne" />
         </div>
         </h3>
