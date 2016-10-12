@@ -9,7 +9,16 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
-
+	<script>
+		var numOfVariables = 20; // size of the number of the problems
+	for (var i = 0; i < numOfVariables; i++)
+	{
+		var randomNumberGen = Math.floor(Math.random() * 10);
+		function randomNumberAssignment() {
+			document.getElementById('test').innerHTML = "testing...";
+		}
+	}
+	</script>
   
     
   </head>
@@ -28,7 +37,7 @@
      
     </section>
     <section class="main-content">
-      <h3>
+      <h3 id="test">
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>
     
         </h3>
