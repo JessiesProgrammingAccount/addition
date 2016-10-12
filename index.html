@@ -65,12 +65,12 @@
 		  var result = randomNumberGen1 + randomNumberGen2;
 			  document.getElementById("coutCorrect").innerHTML = result;
 		  var userInput;
-		  if (userInput == result)
+		  if (userInput = result){
 			 document.getElementById("cout").innerHTML = "Good job! You are a genius!" + "The correct answer is: " + result + ".";
-		  
-		  else 
+		  }
+		  else if (userInput != result){
 		         document.getElementById("cout").innerHTML = "Try again.";
-		  
+		  }
 		  }
 		  
 	document.getElementById("question2").innerHTML = randomNumberGen3 + " + " + randomNumberGen4 + " = ";
