@@ -40,8 +40,8 @@
     </section>
     <section class="main-content">
 <h3 id="question1"></h3>
-	      <input onchange="myBfIsBetterThanYouAll()" >
-	    <h3 id="cout"></h3>
+<input onchange="myBfIsBetterThanYouAll()" >
+<h3 id="cout"></h3>
 
 <h3 id="question2"></h3>
 <h3 id="question3"></h3>
@@ -87,12 +87,12 @@
 		  var result = randomNumberGen1 + randomNumberGen2;
 			  //document.getElementById("cout").innerHTML = result;
 		  var userInput;
-		  if (userInput == result)
+		  if (userInput == result){
 			 document.getElementById("cout").innerHTML = "Good job! You are a genius!"
-		  
-		  else 
+		  }
+		  else {
 		         document.getElementById("cout").innerHTML = "Give yourself one more try!"
-		  
+		  }
 		  
 	document.getElementById("question2").innerHTML = randomNumberGen3 + " + " + randomNumberGen4 + " = ";
 	document.getElementById("question3").innerHTML = randomNumberGen5 + " + " + randomNumberGen6 + " = ";
