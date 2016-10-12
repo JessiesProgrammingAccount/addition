@@ -40,6 +40,10 @@
     </section>
     <section class="main-content">
 <h3 id="question"></h3>
+<h3 id="question"></h3>
+<h3 id="question"></h3>
+<h3 id="question"></h3>
+<h3 id="question"></h3>
 	
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Jessiegao1994/addition">Addition</a> is maintained by <a href="https://github.com/Jessiegao1994">Jessiegao1994</a>.</span>
@@ -47,10 +51,13 @@
       </footer>
     </section>
 	  <script>
+	var numOfVariables = 20; // size of the number of the problems
+	for (var i = 0; i < numOfVariables; i++)
+	{	  
 	var randomNumberGenA = Math.floor(Math.random() * 10);
 	var randomNumberGenB = Math.floor(Math.random() * 10);
-
-		  document.getElementById("question").innerHTML = randomNumberGenA + " + " + randomNumberGenB;
+	document.getElementById("question").innerHTML = randomNumberGenA + " + " + randomNumberGenB;
+	}
 		  
 	  </script>
   </body>
