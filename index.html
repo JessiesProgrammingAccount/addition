@@ -47,7 +47,9 @@
       </footer>
     </section>
 	  <script>
-	document.getElementById("question").innerHTML = "This should show the correct answer";
+	var randomNumberGen = Math.floor(Math.random() * 10);
+		  document.getElementById("question").innerHTML = randomNumberGen;
+		  
 	  </script>
   </body>
 </html>
