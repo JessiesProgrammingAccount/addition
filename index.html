@@ -20,7 +20,7 @@
 <input onchange="testInput()" > 
 <h3 id="coutCorrect"></h3>
 
-<h3 id="cout">Wrong answer, try again.</h3>
+<h3 id="cout"></h3>
 	    
 
 <h3 id="question2"></h3>
@@ -59,7 +59,7 @@
 	var randomNumberGen19 = Math.floor(Math.random() * 10) + 1;
 	var randomNumberGen20 = Math.floor(Math.random() * 10) + 1;
 	
-	document.getElementById("question1").innerHTML = randomNumberGen1 + " + " + randomNumberGen2 + " = ";
+	document.getElementById("cout").innerHTML = randomNumberGen1 + " + " + randomNumberGen2 + " = ";
 		  function testInput()
 		  {
 		  var result = randomNumberGen1 + randomNumberGen2;
