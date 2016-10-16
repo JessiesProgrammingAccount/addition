@@ -59,14 +59,14 @@
 	var randomNumberGen19 = Math.floor(Math.random() * 10) + 1;
 	var randomNumberGen20 = Math.floor(Math.random() * 10) + 1;
 	
-	document.getElementById("cout").innerHTML = randomNumberGen1 + " + " + randomNumberGen2 + " = ";
+	document.getElementById("question1").innerHTML = randomNumberGen1 + " + " + randomNumberGen2 + " = ";
 		  function testInput()
 		  {
 		  var result = randomNumberGen1 + randomNumberGen2;
 			 // document.getElementById("coutCorrect").innerHTML = result;
 		  var userInput;
 		  var greeting;
-		  if (userInput = result){
+		  if (userInput == result){
 			// document.getElementById("cout").innerHTML = "Good job! You are a genius!" + "The correct answer is: " + result + ".";
 			  greeting = "Good job! You are a genius!" + "The correct answer is: " + result + ".";
 		  }
