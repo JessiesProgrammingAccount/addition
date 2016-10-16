@@ -19,7 +19,6 @@
 <h3 id="question1"></h3>
 <input id="userInput" onchange="testInput()" > 
 <h3 id="coutCorrect"></h3>
-
 <h3 id="cout"></h3>
 	    
 
@@ -65,16 +64,18 @@
 		  var result = randomNumberGen1 + randomNumberGen2;
 			 // document.getElementById("coutCorrect").innerHTML = result;
 		  var userInput;
-		  var greeting;
+		  var outPut;
 		  if (document.getElementById("userInput") == result){
 			// document.getElementById("cout").innerHTML = "Good job! You are a genius!" + "The correct answer is: " + result + ".";
-			  greeting = "Good job! You are a genius!" + "The correct answer is: " + result + ".";
+			  cout = "Good job! You are a genius!" + "The correct answer is: " + result + ".";
+		  
+			  document.getElementById("coutCorrect") = outPut;
 		  }
 		  else if (userInput != result){
 		        // document.getElementById("cout").innerHTML = "Try again.";
-			  greeting = "Try again.";
-		  }
-			  document.getElementById("cout") = greeting;
+			  cout = "Try again.";
+		  
+			  document.getElementById("cout") = outPut;
 		  }
 		  
 	document.getElementById("question2").innerHTML = randomNumberGen3 + " + " + randomNumberGen4 + " = ";
