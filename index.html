@@ -22,7 +22,7 @@
 	    
 
 <h3 id="question2"></h3>
-	    <input id="userInput" onchange="testInput()" > 
+	    <input id="userInput2" onchange="testInput()" > 
 <h3 id="cout"></h3>
 <h3 id="question3"></h3>
 
@@ -81,7 +81,18 @@
 		         document.getElementById("cout").innerHTML = "Try again.";
 		  }
 	document.getElementById("question2").innerHTML = randomNumberGen3 + " + " + randomNumberGen4 + " = ";
+		  function testInput()
+		  {
+		  var result = randomNumberGen3 + randomNumberGen4;
+		  var userInput;
+		  if (document.getElementById("userInput2").value == result){
+			 document.getElementById("cout").innerHTML = "Good job! You are a genius!" + " The correct answer is: " + result + ".";
+			 
+		  }
 		  
+		  else
+		         document.getElementById("cout").innerHTML = "Try again.";
+		  }
 	document.getElementById("question3").innerHTML = randomNumberGen5 + " + " + randomNumberGen6 + " = ";
 		 
 	document.getElementById("question4").innerHTML = randomNumberGen7 + " + " + randomNumberGen8 + " = ";
